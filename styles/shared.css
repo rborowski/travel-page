@@ -1,13 +1,14 @@
 * {
   font-family: "Quicksand", sans-serif;
 }
-html{
+html {
   min-height: 100%;
 }
+
 body {
+  min-height: 100vh;
   min-width: 400px;
   margin: 0;
-  background-color: rgb(200, 248, 248);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -33,6 +34,18 @@ a {
   text-decoration: none;
 }
 
+.button {
+  background-color: rgb(255, 251, 0);
+  color: black;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 700;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+.button:hover {
+  background-color: rgb(255, 230, 0);
+}
+
 #page-logo a {
   padding: 10px;
   font-family: "Oleo Script", sans-serif;
@@ -41,26 +54,29 @@ a {
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   display: inline;
 }
-nav{
+nav {
   margin: 8px 0;
 }
-
-nav ul {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+nav ul {
   justify-content: flex-end;
 }
 
-nav ul li a{
+nav a {
   color: rgb(255, 251, 0);
   font-size: 20;
   padding: 10px;
   margin-left: 10px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.3);
 }
-nav ul li a:hover {
+
+nav a:hover {
   color: black;
   background-color: rgb(245, 239, 160);
   border-radius: 8px;
@@ -69,22 +85,17 @@ nav ul li a:hover {
 
 footer {
   min-height: 100px;
-  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 34)) ;
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 34));
   padding: 36px 0;
   bottom: 0;
-  left: 0;  
+  left: 0;
   width: 100%;
   box-sizing: border-box;
   text-align: center;
 }
 
 footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0px;
-  display: flex;
   justify-content: center;
-
 }
 
 footer li {
